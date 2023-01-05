@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+.chkbox--green[type=checkbox]  {
+    position: relative;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+.chkbox--green[type=checkbox]:before  {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    left: 0;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.chkbox--green[type=checkbox]:checked::before  {
+    border: 2px solid green;
+}
+
+.chkbox--green[type=checkbox]:checked:after  {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 13px;
+    border: solid green;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 7px;
+}
+
+.loading  {
+    max-height: 30px;
+}
